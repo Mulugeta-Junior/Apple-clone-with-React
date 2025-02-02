@@ -1,14 +1,15 @@
-import React from 'react'
-import { Link } from react-router-dom;
+import React from "react";
+import { Link } from "react-router-dom";
 
- function Navbarlink(linkName, LinkUrl) {
+function NavbarLink({ linkName, LinkUrl }) {
   return (
-    <div>
-      <li className='nav-item'>
-        <a className='nav-link Js-scroll-trigger' href='LinkUrl'>(linkName)</a>
-
-      </li>
-    </div>
-  )
+    <li className="nav-item">
+      {/* Use Link from react-router-dom for client-side navigation */}
+      <Link className="nav-link Js-scroll-trigger" to={LinkUrl}>
+        {linkName}
+      </Link>
+    </li>
+  );
 }
-export default Navbarlink;
+
+export default NavbarLink;
