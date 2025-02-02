@@ -287,8 +287,9 @@ import banker from "../images/home/banker.png";
 import watchSeries from "../images/icons/watch-series5-logo.png";
 // front image from Sixth left Section
 import arcade from "../images/icons/arcade.png";
-import YoutubeVideos from "../Youtube/YoutubeVideos";
+import YoutubeVideos from "../Componenet2/YoutubeVideos";
 import { Link } from "react-router-dom";
+
 
 function Main() {
   return (
